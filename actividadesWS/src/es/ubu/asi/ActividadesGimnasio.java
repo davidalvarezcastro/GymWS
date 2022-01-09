@@ -55,7 +55,7 @@ public class ActividadesGimnasio implements ActividadesGimnasioInterface {
         	if (sesion == null)
                 throw new Exception("No se ha encontrado HTTP Session");
 
-        	String operaciones = (String)sesion.getAttribute("operaciones");
+        	String operaciones = (String)sesion.getAttribute(SESSION_CONSULTA_KEY);
         	if (operaciones == null) {
         		operaciones = operacion;
         	} else {

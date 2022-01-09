@@ -47,7 +47,7 @@ public class ActividadesGimnasioClient {
 		ActividadesGimnasioService servicio = new ActividadesGimnasioService();		
 		ActividadesGimnasio c = servicio.getActividadesGimnasioPort();
 		// mantenemos la sesión (probar a comentar)
-		((BindingProvider)c).getRequestContext().put(BindingProvider.SESSION_MAINTAIN_PROPERTY,true);
+		// ((BindingProvider)c).getRequestContext().put(BindingProvider.SESSION_MAINTAIN_PROPERTY,true);
 
 
 		// ejecutamos un serie de consultas del servicio
